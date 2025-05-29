@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f3f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Forms */
+form > div {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #007bff;
+}
+
+/* Radio & Checkbox Groups */
+form > div > div > p {
+  font-weight: 500;
+  margin: 0.75rem 0 0.25rem;
+}
+
+label input[type="radio"] {
+  margin-left: 0.75rem;
+}
+
+/* Button */
+button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Feedback Messages */
+p[style*="color: red"],
+p[style*="color: green"] {
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+p[style*="color: red"] {
+  background: #ffe6e6;
+  border-left: 5px solid #e60000;
+}
+
+p[style*="color: green"] {
+  background: #e6fff1;
+  border-left: 5px solid #00b85b;
+}
+
+/* Results */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  font-size: 1.05rem;
+}
+
+/* Responsive media */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  form > div {
+    margin-bottom: 2rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+}
+table {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f1f3f5;
+  font-weight: 600;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+.survey-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.ratings-table-container {
+  overflow-x: auto;
+}
+
+.ratings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ratings-table th,
+.ratings-table td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+}
+
+.ratings-table th {
+  background-color: #f1f3f5;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  background-color: #ffe5e5;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.success {
+  color: green;
+  background-color: #e5ffe8;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
