@@ -34,5 +34,5 @@ A full-stack lifestyle survey application that allows users to submit lifestyle 
 ### 🔹 Clone the Repository
 
 ```bash
-git clone https://github.com/Mulisamurudi/lifestyle-survey-app.git
-cd lifestyle-survey-app
+git clone https://github.com/Mulisamurudi/lifestyle-survey.git
+cd lifestyle-survey
